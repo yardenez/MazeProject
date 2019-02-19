@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="359.0" prefWidth="654.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MyViewController">
+    <children>
+        <GridPane layoutX="31.0" layoutY="55.0" prefHeight="206.0" prefWidth="468.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.0" minWidth="10.0" prefWidth="138.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="184.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="175.0" minWidth="10.0" prefWidth="117.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="94.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="89.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="86.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <Label prefWidth="167.0" text="Generating Algorithm:" underline="true" GridPane.rowIndex="0">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font></Label>
+                <Label text="Solving Algorithm:" underline="true" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font></Label>
+                <Label prefHeight="42.0" prefWidth="131.0" text="${controller.mazeGeneratorAlgo}" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <Label prefHeight="47.0" prefWidth="177.0" text="${controller.searchAlgo}" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+
+            </children>
+        </GridPane>
+      <Label layoutX="31.0" layoutY="7.0" prefHeight="62.0" prefWidth="144.0" text="Properties:" underline="true">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

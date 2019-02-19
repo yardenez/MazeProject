@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab text="General Instructions">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="371.0" prefWidth="513.0">
+               <children>
+                  <Accordion>
+                    <panes>
+                      <TitledPane animated="false" text="Generate Maze">
+                           <content>
+                              <TextArea prefHeight="200.0" prefWidth="200.0" text="Every time a new game is opend, you will have the option to generat a new maze according to your&#10;requested maze dimentaions.&#10;&#10;To the left of this button, you are requested to enter number of maze rows and number of maze columns.&#10;Please notice that you cannot request for a maze with width or height smaller that 2 (included)- &#10;You can do better than that! &#10;of course, you enter only numeric values.&#10;&#10;If you wish to generate a new maze after the one you just generated, you must click the new button.&#10;for help on this matter- move to the &quot;New&quot; tab.&#10;" />
+                           </content></TitledPane>
+                      <TitledPane animated="false" text="Solve&amp;Hide Maze">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TextArea layoutY="-2.0" prefHeight="182.0" prefWidth="600.0" text="By clicking the Solve Maze button, the solution will be shown on the maze and you will see the path&#10;to your destination.&#10;&#10;When you will click on the SOLVE button, an option for hiding will be available to you.&#10;If you wish to peek on the solution again- just click solve maze again!" />
+                                 </children></AnchorPane>
+                        </content>
+                      </TitledPane>
+                        <TitledPane animated="false" layoutX="10.0" layoutY="85.0" prefHeight="1244.0" prefWidth="1804.0" text="File">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TabPane layoutX="-4.0" prefHeight="244.0" prefWidth="606.0" tabClosingPolicy="UNAVAILABLE">
+                                      <tabs>
+                                        <Tab text="New">
+                                          <content>
+                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="224.0" prefWidth="225.0">
+                                                   <children>
+                                                      <TextArea layoutX="4.0" layoutY="-4.0" prefHeight="231.0" prefWidth="600.0" text="By clicking the new button , will be returned to to opening screen.&#10;You can now again choose new dimentaions and generate a new maze as you wish!&#10;" />
+                                                   </children>
+                                                </AnchorPane>
+                                          </content>
+                                        </Tab>
+                                        <Tab text="Save &amp; Load">
+                                             <content>
+                                                <TextArea prefHeight="200.0" prefWidth="200.0" text="In every moment while solving the maze, you can save the maze by clicking SAVE!&#10;Just choose the direcorty you want to save in, the name you wish to give to your maze and click save.&#10;&#10;The position of your character will be saved as well so you can take a break and start playing from the&#10;exact same place by clicking the LOAD option and choosing the maze you want." />
+                                             </content>
+                                        </Tab>
+                                      </tabs>
+                                    </TabPane>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="How to Play?">
+         <content>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0">
+               <content>
+                  <HBox prefHeight="371.0" prefWidth="600.0">
+                     <children>
+                        <TextArea prefHeight="371.0" prefWidth="329.0" text="Hi there!&#10;&#10;You are Anna, Elza's sister and you wish to find Elza &#10;in the complicated maze.&#10;&#10;Before going out, you should know the following:&#10;1. The freezing area are out of bound. &#10;You are allowed to walk only on the white snow.&#10;In order to move, use the keyboard:&#10;&#10;1. Move North : Press Up or 8.&#10;2. Move South: Press Down or 2.&#10;3. Move West: Press Left or 4.&#10;4. Move Right: Press East Press Right or 6.&#10;&#10;Notice that you can move diagonaly when:&#10;1. Move North-East: press 9.&#10;2. Move West-North: press 7.&#10;3. Move South-East: press 3.&#10;4. Move South-West: press 1.&#10;Diagonal movement is approved only if there is&#10;a regular path to the same position &#10;&#10;Now you are all set, off you go!&#10;&#10;&#10;&#10;&#10;">
+                           <font>
+                              <Font name="Constantia" size="13.0" />
+                           </font>
+                        </TextArea>
+                        <VBox prefHeight="371.0" prefWidth="29.0" />
+                        <ImageView fitHeight="372.0" fitWidth="296.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@/ImagesForView/keyboard.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </content>
+            </ScrollPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

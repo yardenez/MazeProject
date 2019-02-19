@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="399.0" fitWidth="311.0" pickOnBounds="true">
+         <image>
+            <Image url="@/ImagesForView/YardenAndYafit.jpg" />
+         </image></ImageView>
+      <TextArea prefHeight="400.0" prefWidth="296.0" text="&#10;&#10;Hi! &#10;&#10;We are Yafit and Yarden, 25 years old,&#10;studying Information System Engineering.&#10;&#10;Here some basic data on our maze application:&#10;&#10;1. Genreating a new maze can be applyed according&#10;to Prim algorithm  or a simple maze algorithm.&#10;&#10;2. Solving the maze can be made with DFS, BFS or&#10;BestFirstSearch algorithms.&#10;&#10;Hope you will like our app!&#10;&#10;" />
+   </children>
+</HBox>
